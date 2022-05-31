@@ -9,7 +9,19 @@
             <?= "Первый сайт на PHP"; ?>
         </h1>
         <div>
-            2 + 2 = <?= 2+2 ?>
+        <?php
+        $name = "не определено";
+        $age = "не определен";
+            if(isset($_GET["name"])){
+  
+                $name = $_GET["name"];
+            }
+            if(isset($_GET["age"])){
+  
+                $age = $_GET["age"];
+            }
+        echo "Имя: $name <br> Возраст: $age";
+        ?>
         </div>
     </body>
 <html>
